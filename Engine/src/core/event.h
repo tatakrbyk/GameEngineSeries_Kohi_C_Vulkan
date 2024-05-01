@@ -54,7 +54,7 @@ KAPI b8 event_register(u16 code, void* listener, PFN_on_event on_event);
  * @param on_event The callback fucntion pointer to bu unregistered
  * @returns TRUE  if the event is successfully unregistered: otherwise FALSE.
 */
-KAPI b8 event_unregistered(u16 code, void* listener, PFN_on_event on_event);
+KAPI b8 event_unregister(u16 code, void* listener, PFN_on_event on_event);
 
 /**
  * Fires an event to listeners of the given code. If an event handler returns
@@ -108,7 +108,7 @@ typedef enum system_event_code
     /* Context usage:
     *  u8 z_delta = data.data.u8[0];
     */
-    EVENT_CODE_BUTTON_WHELL = 0x07,
+    EVENT_CODE_MOUSE_WHEEL  = 0x07,
 
 
     // Resized/resolution changed from the OS.
