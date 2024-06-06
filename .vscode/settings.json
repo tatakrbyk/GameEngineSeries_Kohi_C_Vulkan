@@ -64,6 +64,7 @@
         "kmemory.h": "c",
         "defines.h": "c",
         "darray.h": "c",
-        "format": "c"
+        "format": "c",
+        "application.h": "c"
     }
 }
