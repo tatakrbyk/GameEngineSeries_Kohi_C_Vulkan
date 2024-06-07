@@ -247,12 +247,12 @@ b8 platform_pump_messages(platform_state* plat_state) {
                 input_process_mouse_move(move_event->event_x, move_event->event_y);
             } break;
             case XCB_CONFIGURE_NOTIFY: {
-                // TODO: Resizing - note that this is also triggred by moving the window, but should be
+                // Resizing - note that this is also triggered by moving the window, but should be
                 // passed anyway since a change in the x/y could mean an upper-left resize.
                 // The application layer can decide what to do with this.
                 xcb_configure_notify_event_t *configure_event = (xcb_configure_notify_event_t *)event;
 
-                // Fire the event. The application layer should pick this up, but not handle it 
+                // Fire the event. The application layer should pick this up, but not handle it
                 // as it shouldn be visible to other parts of the application.
                 event_context context;
                 context.data.u16[0] = configure_event->width;

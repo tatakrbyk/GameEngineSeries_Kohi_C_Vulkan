@@ -240,10 +240,10 @@ LRESULT CALLBACK win32_process_message(HWND hwnd, u32 msg, WPARAM w_param, LPARA
 
             // Fire the event. The application layer should pick this up, but not handle it
             // as it shouldn be visible to other parts of the application.
-            event_context contenxt;
-            contenxt.data.u16[0] = (u16)width;
-            contenxt.data.u16[1] = (u16)height;
-            event_fire(EVENT_CODE_RESIZED, 0, contenxt);
+            event_context context;
+            context.data.u16[0] = (u16)width;
+            context.data.u16[1] = (u16)height;
+            event_fire(EVENT_CODE_RESIZED, 0, context);
         } break;
         case WM_KEYDOWN:
         case WM_SYSKEYDOWN:
