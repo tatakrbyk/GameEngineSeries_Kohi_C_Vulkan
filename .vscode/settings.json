@@ -65,6 +65,11 @@
         "defines.h": "c",
         "darray.h": "c",
         "format": "c",
-        "application.h": "c"
+        "application.h": "c",
+        "array": "c",
+        "span": "c",
+        "vector": "c",
+        "xstring": "c",
+        "xutility": "c"
     }
 }
