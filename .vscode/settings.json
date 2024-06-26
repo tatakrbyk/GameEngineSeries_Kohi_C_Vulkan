@@ -5,7 +5,7 @@
     "terminal.integrated.shell.windows": "c:/Program Files/PowerShell/7/pwsh.exe",
     "terminal.integrated.fontWeight": "1",
     "editor.fontFamily": "Liberation Mono",
-    "editor.fontSize": 13.7,
+    "editor.fontSize": 14,
     "editor.fontWeight": "1",
     "workbench.editor.showTabs": "single",
     "workbench.colorCustomizations": {
@@ -63,13 +63,11 @@
         "utility": "cpp",
         "kmemory.h": "c",
         "defines.h": "c",
-        "darray.h": "c",
-        "format": "c",
-        "application.h": "c",
-        "array": "c",
-        "span": "c",
-        "vector": "c",
-        "xstring": "c",
-        "xutility": "c"
+        "vulkan_types.inl": "c",
+        "clock.h": "c",
+        "kstring.h": "c",
+        "logger.h": "c",
+        "expected": "cpp",
+        "ENTRY.C": "cpp"
     }
 }
