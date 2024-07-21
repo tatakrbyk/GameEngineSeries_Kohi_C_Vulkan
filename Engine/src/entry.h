@@ -28,10 +28,9 @@ int main(void)
         return -2;
     }
 
-    // Initialization
-    if(!application_create(&game_inst))
-    {
-        KINFO("Applicaiton failed to create!.");
+    // Initialization.
+    if (!application_create(&game_inst)) {
+        KFATAL("Application failed to create!.");
         return 1;
     }
 
