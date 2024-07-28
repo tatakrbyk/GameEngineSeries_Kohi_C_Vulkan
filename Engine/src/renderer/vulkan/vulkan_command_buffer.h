@@ -41,7 +41,7 @@ void vulkan_command_buffer_allocate_and_begin_single_use(
  * Ends recording, submits to and waits for queue operation and frees the provided command buffer.
 */
 
-void vulkan_command_buffer_and_single_use(
+void vulkan_command_buffer_end_single_use(
     vulkan_context* context,
     VkCommandPool pool,
     vulkan_command_buffer* command_buffer,
